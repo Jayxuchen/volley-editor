@@ -42,10 +42,11 @@ func main() {
 
 		// Example overlays - you can replace with dynamic or loaded-from-file data
 		overlays := []video.ScoreOverlay{
-			{Start: 0, End: 1, Text: "Home 0 - Away 0"},
-			{Start: 1, End: 2, Text: "Home 1 - Away 0"},
-			{Start: 2, End: 3, Text: "Home 1 - Away 1"},
-			{Start: 2, End: 3, Text: "Home 1 - Away 2"},
+			{Start: 0, End: 1, HomeScore: 0, AwayScore: 1},
+			{Start: 1, End: 2, HomeScore: 1, AwayScore: 1},
+			{Start: 2, End: 3, HomeScore: 2, AwayScore: 1},
+			{Start: 3, End: 4, HomeScore: 2, AwayScore: 2},
+			{Start: 4, End: 5, HomeScore: 10, AwayScore: 2},
 		}
 
 		log.Printf("Processing %s → %s", inputPath, outputPath)

@@ -1,7 +1,8 @@
 package video
 
 type ScoreOverlay struct {
-	Start float64 // in seconds
-	End   float64
-	Text  string
+	Start     float64
+	End       float64
+	HomeScore int32
+	AwayScore int32
 }
